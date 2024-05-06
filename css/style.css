@@ -1,0 +1,270 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+ul, nav{
+  list-style: none;
+}
+p{
+  margin-top: 10px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  opacity: 0.85;
+}
+a:hover{
+  opacity: 1;
+}
+/* Header e nav */
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  position: absolute;
+  background-color: white;
+}
+.logo{
+  max-width: 200px;
+}
+ul{
+  display: flex;
+  padding: 20px;
+}
+.navul li{
+  padding: 20px;
+}
+@media(max-width: 700px){
+  header{
+    flex-direction: column;
+  }
+  
+ header a{
+    margin: 5px 15px;
+  }
+  .navul{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+ }
+/* Seção 1 - Hero image*/
+.sec1{
+  background-image: url(../img/prainha.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+.sec1 h1{
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+}
+.sec1 h3{
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}.sec1 a{
+  background-color: #FFF;
+  border-radius: 4px;
+  padding: 20px 50px;
+}
+@media(max-width: 700px){
+
+  .sec1 h1{
+    font-size: 2.5rem;
+    
+  }
+  .sec1 h3{
+    font-size: 1.5rem;
+  }
+ }
+/* Seção 2 - Conheça */
+.conheca{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 25px;
+  text-align: center;
+}
+.conheca h3{
+  font-size: 2.5rem;
+}
+.conheca hr{
+  margin: 50px 0 15px;
+  width: 250px;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+.grid{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.grid li{
+  height: 320px;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+}
+.grid li.small{
+  flex-basis: 40%;
+}
+.grid li.large{
+  flex-basis: 60%;
+}
+@media(max-width: 700px){
+  .grid li.small, .grid li.large{
+    flex-basis: 100%;
+  }
+  .conheca h3{
+    font-size: 2rem;
+    
+  }
+  
+ }
+/* Seção 3 - Caracteristicas*/
+
+.caracteristicas{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #252603;
+  color: white;
+  padding: 50px 0px;
+}
+.caracteristicas h3{
+  font-size: 2.5rem;
+}
+.caracteristicas p{
+  max-width: 750px;
+}
+.caracteristicas hr{
+  margin: 45px;
+  width: 250px;
+  height: 2px;
+  background-color: #FFF;
+  border: none;
+}
+.caracteristicas ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.caracteristicas li{
+  max-width: 320px;
+}
+.caracteristicas i{
+  font-size: 50px;
+  margin-bottom:30px;
+  color: #c1c711
+}
+.caracteristicas h4{
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #c1c711;
+}
+
+@media(max-width: 700px){
+  .caracteristicas h3{
+    font-size: 2rem;
+  }
+  .caracteristicas ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .caracteristicas li{
+    margin: 0px 0px 70px;
+  }
+ }
+ /* Seção 4 - Newsletter */
+ .newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  text-align: center;
+ }
+ .newsletter h3{
+  font-size: 2.5rem;
+}
+.newsletter hr{
+  margin: 50px 0;
+  width: 250px;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+.iptnews{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.newsletter input{
+  border: 2px solid #c3c63b;
+  border-radius: 5px;
+  width: 50%;
+  height: 60px;
+  margin-right: 15px;
+  padding: 15px;
+}
+.newsletter button{
+  background: #c3c63b;
+  padding: 0 30px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 700px){
+  .iptnews{
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter input{
+    margin-bottom: 15px;
+    width: 90%;
+  }
+  .newsletter button{
+    height: 60px;
+  }
+  
+}
+ /* Footer */
+  footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #252603;
+    padding: 20px;
+    align-items: center;
+}
+  footer ul li{
+    font-size: 50px;
+    color: #c3c63b;
+    margin-right: 30px;
+  }
+  footer ul li:last-child{
+    margin-right: 0;
+  }
+  footer i{
+    color: #c3c63b;
+  }
+  footer p{
+    color: #c3c63b;
+  }
